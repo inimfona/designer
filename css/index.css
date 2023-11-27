@@ -2,7 +2,7 @@ body{
    
 }
 .tree{
-     background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.8)), url("./../img/R.jpeg");
+     background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.623)), url("./../img/R.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -211,7 +211,7 @@ body{
     background-color: rgba(94, 94, 94, 0.356);
     position: absolute;
     top: 60px;
-    width: 70%;
+    width: 100%;
     z-index: 9995;
 }
 .homex{
