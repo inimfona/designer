@@ -218,11 +218,105 @@ body{
     text-decoration: none;
     color: white;
     padding: 10px 0px 10px 15px;
-   
     font-size: 1.1rem;
     font-family: 'Space Grotesk', sans-serif  !important;
 }
 .curve{
     display: flex;
     justify-content: center;
+}
+.about{
+    font-weight: bold;
+    font-size: 1.7rem;
+    font-family: 'Space Grotesk', sans-serif  !important;
+}
+@media(min-width:1500px){
+    .about{
+       margin: 40px 0px 0px 0px;
+    }
+}
+.arter{
+    padding: 0px 20px 0px 0px;
+}
+.brown{
+   
+    padding: 40px 0px 0px 80px;
+}
+.width2{
+    width: 90%;
+    position: relative;
+    border-radius: 5px;
+    top: 20px;
+   
+}
+.web{
+    color: white;
+    font-weight: bold;
+    font-size: 1.7rem;
+    font-family: 'Space Grotesk', sans-serif  !important;
+}
+.frontEnd{
+    color: white;
+    padding: 0px 0px 0px 57px;
+}
+.blackwhite{
+    background: url('./../img/tt.png');
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.small{
+    padding: 0px 0px 0px 120px;
+}
+.flex{
+    display: flex;
+
+}
+.fine{
+    width: 55px;
+    position: relative;
+    right: 20px;
+    top: 30px;
+}
+@media(max-width:1400px){
+    .small{
+        display: none;
+    }
+}
+@media(max-width:1200px){
+    .blackwhite{
+        display: none;
+    }
+}
+.teal{
+    border-radius: 40px;
+    width: 120px;
+    height: 150px;
+    background: white;
+    box-shadow: -8px -8px 15px rgba(0, 0, 0, 0),5px 5px 15px rgba(39, 39, 39, 0.404) !important;
+   
+}
+
+.active{
+    background-color: rgb(58, 58, 58);
+    height: 30px;
+}
+.phone{
+    height: 60px;
+    margin-top: 40px;
+    color: white ;
+}
+.green{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+}
+.fast{
+    padding-top: 5px;
+    color: rgb(58, 58, 58);
+    font-size: 21px;
+    font-weight: bold;
 }
