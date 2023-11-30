@@ -237,17 +237,24 @@ body{
 }
 .arter{
     padding: 0px 20px 0px 0px;
+    color: rgb(80, 79, 79);
+     font-family: 'Space Grotesk', sans-serif  !important;
 }
 .brown{
    
     padding: 40px 0px 0px 80px;
 }
 .width2{
+    width: 80%;
+    position: relative;
+    border-radius: 5px;
+    top: 20px;  
+}
+.width3{
     width: 90%;
     position: relative;
     border-radius: 5px;
-    top: 20px;
-   
+    top: 10px;  
 }
 .web{
     color: white;
@@ -255,9 +262,22 @@ body{
     font-size: 1.7rem;
     font-family: 'Space Grotesk', sans-serif  !important;
 }
+.web2{
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Space Grotesk', sans-serif  !important;
+}
 .frontEnd{
     color: white;
     padding: 0px 0px 0px 57px;
+}
+.frontEnd2{
+    color: rgb(80, 79, 79);
+    padding: 0px 0px 0px 57px;
+    font-family: 'Space Grotesk', sans-serif  !important;
+    position: relative;
+    bottom: 20px;
 }
 .blackwhite{
     background: url('./../img/tt.png');
@@ -268,6 +288,10 @@ body{
 .small{
     padding: 0px 0px 0px 120px;
 }
+.small2{
+    width: 15%;
+    float: right;
+}
 .flex{
     display: flex;
 
@@ -276,6 +300,12 @@ body{
     width: 55px;
     position: relative;
     right: 20px;
+    top: 30px;
+}
+.fine2{
+    width: 55px;
+    position: relative;
+    right: 9px;
     top: 30px;
 }
 @media(max-width:1400px){
@@ -288,13 +318,18 @@ body{
         display: none;
     }
 }
+@media(min-width:1200px){
+    .blackwhite2{
+        display: none;
+    }
+}
 .teal{
     border-radius: 40px;
     width: 120px;
     height: 150px;
     background: white;
     box-shadow: -8px -8px 15px rgba(0, 0, 0, 0),5px 5px 15px rgba(39, 39, 39, 0.404) !important;
-   
+    margin: 0px 5px 0px 5px;
 }
 
 .active{
@@ -316,7 +351,10 @@ body{
 }
 .fast{
     padding-top: 5px;
-    color: rgb(58, 58, 58);
+    color:black;
     font-size: 21px;
     font-weight: bold;
+}
+.smallbg{
+   
 }
