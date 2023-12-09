@@ -271,6 +271,8 @@ body{
 .frontEnd{
     color: white;
     padding: 0px 0px 0px 57px;
+    position: relative;
+    bottom: 20px;
 }
 .frontEnd2{
     color: rgb(80, 79, 79);
@@ -300,12 +302,12 @@ body{
     width: 55px;
     position: relative;
     right: 20px;
-    top: 30px;
+    top: 25px;
 }
 .fine2{
     width: 55px;
     position: relative;
-    right: 9px;
+    right: 5px;
     top: 30px;
 }
 @media(max-width:1400px){
@@ -324,7 +326,7 @@ body{
     }
 }
 .teal{
-    border-radius: 40px;
+    border-radius: 5px;
     width: 120px;
     height: 150px;
     background: white;
@@ -357,4 +359,85 @@ body{
 }
 .smallbg{
    
+}
+.man{
+    border-radius: 50%;
+    width: 200px;
+    margin-top: 50px;
+}
+.center2{
+    text-align: center;
+}
+.guy{
+    font-size: 1.7rem;
+    font-weight: 450;
+    font-family: 'Space Grotesk', sans-serif  !important;
+}
+.uiux{
+    color: rgb(80, 79, 79);
+    font-family: 'Space Grotesk', sans-serif  !important;
+    position: relative;
+    bottom: 10px;
+}
+.letter{
+    color: rgb(80, 79, 79);
+    font-family: 'Space Grotesk', sans-serif  !important;
+}
+.resume{
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: black;
+}
+.resume:hover{
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+    font-family: 'Space Grotesk', sans-serif  !important;
+}
+.cupimg{
+    width: 95%;
+    border-radius: 5px;
+}
+.progress2{
+    appearance: none;
+    width: 100%;
+    background-color: white;
+    height: 23px;
+    border-radius: 0px;
+}
+.progress2::-webkit-progress-bar{
+    background-color: white;
+    border: 1px solid black;
+}
+.progress2::-webkit-progress-value{
+    background-color: black;
+}
+.progress2::-moz-progress-bar{
+    background-color:rgb(168, 168, 168);
+}
+.size{
+    position: relative;
+    top: 10px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.1rem;
+}
+.front{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: black;
+    padding-top: 10px;
+}
+.box2{
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2) !important;
+    padding: 12px 10px ;
+}
+.line{
+    color: rgb(80, 79, 79);
+    font-family: 'Space Grotesk', sans-serif  !important;
+}
+.slim{
+    width: 45px;
 }
