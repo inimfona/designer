@@ -406,7 +406,7 @@ body{
     top: 10px;
     font-weight: bold;
     color: black;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 .front{
     font-size: 1.4rem;
@@ -464,11 +464,6 @@ body{
     justify-content: center;
     box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),-0.5px -0.5px 0px  rgba(255, 255, 255, 1),0.5px 0.5px 0px  rgba(0, 0, 0, 0.15),0px 12px 10px -10px  rgba(0, 0, 0, 0.05);
 }
-.REX{
-    position: relative;
-    top: 20px;
-}
-
 .number{
     font-weight: 700;
     color: black;
@@ -523,7 +518,7 @@ body{
     position: relative;
   bottom:0px ;
 }
-@media(max-width:960px){
+@media(max-width:990px){
     .kk{
             position: relative;
           bottom:160px ;
@@ -542,7 +537,167 @@ body{
     }
 }
 .developer{
-    position: relative;
-    top: 40px;
+   
     margin-top: 15px;
+}
+@media(max-width:760px){
+    .hope{
+          display: none;
+    }
+}
+@media(min-width:760px){
+    .hope2{
+          display: none;
+    }
+}
+
+
+.progress2{
+    appearance: none;
+    width: 100%;
+    background-color: white;
+    height: 23px;
+    border-radius: 0px;
+}
+.progress2::-webkit-progress-bar{
+    background-color: white;
+    border: 1px solid black;
+}
+.progress2::-webkit-progress-value{
+    background-color: black;
+}
+.progress2::-moz-progress-bar{
+    background-color:rgb(168, 168, 168);
+}
+.emediong1{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.project{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.emediong2{
+    width: 45%;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(226, 226, 226);
+    margin-top: 25px;
+}
+@media(min-width:1000px){
+    .emediong1{
+          margin-top: 82px;
+    }
+}
+
+.footer{
+    background-color: black;
+    margin-top: 70px;
+    padding: 20px 0px 10px 0px;
+}
+.glow{
+    color: white;
+    font-family: 'Space Grotesk', sans-serif ;
+}
+.Quick{
+    font-weight: bold;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif ;
+    font-size: 20px;
+
+}
+.link{
+    color: rgb(189, 189, 189);
+    font-family: 'Space Grotesk', sans-serif ;
+    display: block;
+    padding-top: 5px;
+}
+.link:hover{
+    color: white;
+    text-decoration: none;
+}
+.submit{
+    background-color: white;
+    color: black;
+    border: none;
+    margin-top: 20px;
+    height: 35px;
+    width: 70px;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+.submit:hover{
+    background-color: white;
+    color: black;
+    border: black 1px solid;
+    transition: 1s;
+}
+.myform{
+    width: 80%;
+    border-bottom: 1px white solid !important;
+    background-color: black;
+    border: none;
+    color: white;
+}
+.myform:focus-visible{
+    outline: none;  
+}
+.teatarea{
+    width: 80%;
+    color: white;
+    background-color: black;
+}
+.teatarea:focus-visible{
+    outline: none;
+}
+#one{
+    color:red;
+}
+.bi{
+    color: white;
+}
+.bi:hover{
+    color: white;
+}
+.left{
+    padding-left: 13px;  
+}
+@media(max-width:780px){
+    .media1{
+        display: none;
+    }
+}
+@media(min-width:780px){
+    .media2{
+        display: none;
+    }
+}
+.Copyright{
+    color: white;
+    font-family: 'Space Grotesk', sans-serif ;
+    font-size: 13px;
+    padding-top: 30px;
+}
+.SAIU{
+    color: rgb(189, 188, 188);
+
+}
+.SAIU:hover{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.dud{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}.dud2{
+    display: flex;
+    flex-wrap: wrap;
+}
+hr{
+    color: white;
+    border: 1px solid white;
 }
