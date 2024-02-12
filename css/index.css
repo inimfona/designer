@@ -433,6 +433,7 @@
     box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2) !important;
     padding: 12px 10px ;
     position: relative;
+    margin-top: 15px;
 }
 .line{
     color: rgb(80, 79, 79);
@@ -587,6 +588,7 @@
 .emediong1{
     width: 100%;
     border-radius: 0.5rem;
+    border: 1px solid rgb(224, 224, 224);
 }
 .project{
     font-size: 1.4rem;
@@ -730,4 +732,10 @@ hr{
     border: none;
     border-radius: 5px;
     padding: 3px 17px 0px 15px;
+}
+.language{
+    width: 40px;
+}
+.js{
+    height: 35px;
 }
