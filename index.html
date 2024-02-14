@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
 </head>
 <body>
     <div class="tree">
@@ -26,12 +28,16 @@
                 </div>
               </div>
             </div>
-            <div class="">
-              <button class="hamburger"  >
-                <span class="onions"></span>
-                <span class="onions"></span>
-              </button>
-            </div>   
+            <div class="burger">
+              <svg xmlns="http://www.w3.org/2000/svg" color="white" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+         </div>
+          <div class="remove">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                </svg>
+          </div>     
           </nav>
           <div class="colo close2">
            <div class="curve">
@@ -486,7 +492,25 @@
     </div>
     </div>
   </div>
-
+  <div class="container">
+    <div class="row mt-5">
+    <div class="col-lg-4 col-md-6">
+      <div class="slide center2 pt-5">
+        <img class="img-slide" src="./img/slide (6).png" alt="">
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="slide center2 pt-5">
+        <img class="img-slide2" src="./img/slide (4).png" alt="">
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="slide center2 pt-5">
+        <img class="img-slide3" src="./img/slide (2).png" alt="">
+      </div>
+    </div>
+    </div>
+  </div>
   <footer class="footer">
     <div class="container">
       <div class="row">
@@ -497,7 +521,7 @@
         <div class="col-md-1"></div>
         <div class="col-md-3 pt-4">
           <p class="Quick">Quick Links</p>
-          <a class="link" href="#home">
+          <a class="link pt-2" href="#home">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  class="  bi bi-plus-lg" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
             </svg>  Home
@@ -512,7 +536,7 @@
               <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
             </svg> About Us
           </a>
-          <div class="media1" >
+          <div class="media1 pt-3" >
             <div class="dud2">
               <a class="" href="">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"  class="bi mt-2 bi-facebook"  viewBox="0 0 16 16">
@@ -555,7 +579,7 @@
               <input id="username" class="myform" value=""  type="text" placeholder="Username">
             </div>
             <div class="pt-3">
-              <input id="email" class="myform" value="" type="text" placeholder="diamondrealtie@gmail.com">
+              <input id="email" class="myform" value="" type="text" placeholder="saiudigitals@gmail.com">
             </div>
             <div class="pt-3">
               <textarea class="teatarea" name="" id="text" cols="30" rows="4" placeholder="text"></textarea>
@@ -603,6 +627,14 @@
       Copyright © 2024 SAIU Digitals </a>
     </div>
   </footer>
+
+  </script>
   <script src="./javscript/index.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  
 </body>
 </html>
