@@ -64,8 +64,7 @@
 .color:hover{
     color: white;
     background-color: black;
-    transition: 1s;
-    
+    transition: ease-in 1s; 
 }
 .kane{
     position: relative;
@@ -113,17 +112,14 @@
 .us{
     border: none;
     color: black;
-    padding: 5px 10px 5px 10px;
-    border-radius: 15px;
+    padding: 4px 5px 4px 10px;
+    border-radius: 30px;
     font-size: 1.1rem;  
     font-weight: 600;
     background-color: white;
      transition: 0.5s;
 }
-.arrow{
-    width: 13px;
-    border-radius: 50%;
-}
+
 .box{
     background-color: white;
     height: 130px;
@@ -153,9 +149,10 @@
 }
 .accurate{
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 500;
     padding-top: 20px;
-    color: black;
+    color: rgb(0, 24, 0);
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
 }
 @media(max-width:800px){
     .close{
@@ -172,9 +169,7 @@
     margin: 5px 20px 5px 0px;
 }
 .colo{
-   display: none;
-  
-   
+   display: none;  
 }
 .sss{
     border-radius: 5px 5px 5px 5px;
@@ -188,8 +183,9 @@
 .homex{
     text-decoration: none;
     color: white;
-    padding: 10px 0px 10px 15px;
+    padding: 15px 0px 10px 15px;
     font-size: 1.1rem;
+    line-height: 1.6;
     font-family: 'Space Grotesk', sans-serif  !important;
 }
 .curve{
@@ -331,8 +327,9 @@
 }
 .man{
     border-radius: 50%;
-    width: 200px;
+    width: 210px;
     margin-top: 50px;
+    border: 1px rgb(196, 196, 196) solid;
 }
 .center2{
     text-align: center;
@@ -368,7 +365,7 @@
 }
 .cupimg{
     width: 90%;
-    border-radius: 10px 5px 5px 5px !important;
+   
 }
 
 .size{
@@ -716,3 +713,164 @@ hr{
         display: none;
     }
 }
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    background-color: white;
+    height: 130px;
+    width: 300px;
+    position: relative;
+    bottom: 95px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 0px 10px 0px;
+    margin: 40px 0px 0px 0px;
+    box-shadow: -8px -8px 15px rgba(0, 0, 0, 0),5px 5px 15px rgba(39, 39, 39, 0.404) !important;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: white;
+    color: white;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: white;
+    color: black;
+    padding: 10px 3px 0px 3px;
+    font-size: 1.1rem;
+    transform: rotateY(180deg);
+   position: relative;
+   bottom: 265px;
+  }
+  .slidee{
+    position: relative;
+    height: 200px;
+    width: 500px;
+    transform-style: preserve-3d;
+    margin-top: 70px;
+   
+  }
+  .square{
+    height: 250px;
+    box-shadow: 0 0 10px #0000004d;
+    border: 1px solid #bbb;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 800ms ease-in-out;
+    overflow: hidden;
+  }
+  .image{
+    width: 100%;
+    height: 100%;
+  }
+  .square{
+    left: 100%;
+  }
+  .square:nth-of-type(6){
+    left: 40%;
+    transform: translate(-50%, -50%) rotateY(-10deg) translateZ(-200px);
+    opacity: 0;
+    z-index: 2;
+  }
+  .square:nth-of-type(5){
+    left: 35%;
+    transform: translate(-50%, -50%) rotateY(-10deg) translateZ(-150px);
+    opacity: 0.25;
+    z-index: 2;
+  }
+  .square:nth-of-type(4){
+    left: 30%;
+    transform: translate(-50%, -50%) rotateY(-10deg) translateZ(-100px);
+    opacity: 0.5;
+    z-index: 5;
+  }
+  .square:nth-of-type(3){
+    left: 25%;
+    color: #eee;
+    transform: translate(-50%, -50%) rotateY(-10deg) translateZ(-50px);
+    opacity: 0.75;
+    z-index: 10;
+  }
+  .square:nth-of-type(2){
+    left: 20%;
+    transform: translate(-50%, -50%) rotateY(-10deg) ;
+    z-index: 2;
+  }
+  .square:first-of-type{
+    left: 15%;
+    transform: translate(-50%, -50%) rotateY(-10deg) ;
+    z-index: 5;
+    opacity: 0;
+  }
+  .arrow1{
+    background-color: black;
+    position: relative;
+    margin-left: 7px;
+    border-radius: 50%;
+  }
+  .arrow2{
+    color: white;
+    position: relative;
+    bottom: 3px;
+  }
+.house{
+    color: #cfcfcf4f;
+    margin-right: 5px;
+    height: 16px;
+    position: relative;
+    bottom: 1px;
+}
+.rightfloat{
+    float: right;
+}
+@media(max-width:1270px){
+    .slidee{
+        display: none;
+    }
+}
+@media(min-width:1100px){
+    .slidee{
+      right: 80px;
+    }
+}
+@media(min-width:1500px){
+    .slidee{
+      right: 0px;
+    }
+}
+@media(min-width:1270px){
+    .cupimg{
+        display: none;
+    }
+}
+

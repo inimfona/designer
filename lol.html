@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <style>
+         .slidee{
+    position: relative;
+    height: 500px;
+    width: 700px;
+    perspective: 500px;
+    transform-style: preserve-3d;
+  }
+  .square{
+    height: 440px;
+    box-shadow: 0 0 10px #0000004d;
+    border: 1px solid #bbb;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 800ms ease-in-out;
+    overflow: hidden;
+  }
+  .image{
+    width: 100%;
+    height: 100%;
+  }
+  .square{
+    left: 1000%;
+  }
+  .square:nth-of-type(6){
+    left: 40%;
+    transform: translate(-50%, -50%) rotateY(-10deg) translateZ(-200px);
+    opacity: 0;
+    z-index: 2;
+  }
+  .square:nth-of-type(5){
+    left: 35%;
+    transform: translate(-50%, -50%) rotateY(-10deg) translateZ(-150px);
+    opacity: 0.25;
+    z-index: 2;
+  }
+  .square:nth-of-type(4){
+    left: 30%;
+    transform: translate(-50%, -50%) rotateY(-10deg) translateZ(-100px);
+    opacity: 0.5;
+    z-index: 5;
+  }
+  .square:nth-of-type(3){
+    left: 25%;
+    color: #eee;
+    transform: translate(-50%, -50%) rotateY(-10deg) translateZ(-50px);
+    opacity: 0.75;
+    z-index: 10;
+  }
+  .square:nth-of-type(2){
+    left: 20%;
+    transform: translate(-50%, -50%) rotateY(-10deg) ;
+    z-index: 2;
+  }
+  .square:first-of-type{
+    left: 15%;
+    transform: translate(-50%, -50%) rotateY(-10deg) ;
+    z-index: 5;
+    opacity: 0;
+  }
+    </style>
+    <title>Slideshow</title>
+</head>
+<body>
+    <div class="slidee" >
+        <div class="square"> <img class="image" src="./img/slide (6).png" alt=""></div>
+        <div class="square"> <img class="image" src="./img/slide (1).png" alt=""></div>
+        <div class="square"> <img class="image" src="./img/slide (5).png" alt=""></div>
+        <div class="square"> <img class="image" src="./img/slide (2).png" alt=""></div>
+        <div class="square"> <img class="image" src="./img/slide (6).png" alt=""></div>
+        <div class="square"> <img class="image" src="./img/slide (7).png" alt=""></div>
+    </div>
+   
+</body>
+<script>
+let slidee = document.querySelector('.slidee');
+setInterval(() => {
+    let last = slidee.firstElementChild;
+    last.remove();
+    slidee.appendChild(last);
+}, 1000);
+
+</script>
+</html>
